@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+  <title>Wordle solver</title>
+</head>
+
+<body>
+  <header>
+    <img src="./img/logo.png">
+    <a href="https://youtu.be/DWwfntvjvjY">How to use?</a>
+  </header>
+  <section id="input-container">
+    <div id="attempt-container"></div>
+    <div id="word-container">
+      <input id="letter-1" maxlength="1" type="text" onfocus="this.select()" />
+      <input id="letter-2" maxlength="1" type="text" onfocus="this.select()" />
+      <input id="letter-3" maxlength="1" type="text" onfocus="this.select()" />
+      <input id="letter-4" maxlength="1" type="text" onfocus="this.select()" />
+      <input id="letter-5" maxlength="1" type="text" onfocus="this.select()" />
+    </div>
+    <button id="add-button" class="button-disabled">Add attempt</button>
+    <button id="clear-button">Clear!</button>
+  </section>
+  <ul id="result-container"></ul>
+  <script src="./js/words.js" defer></script>
+  <script src="./js/attempt.js" defer></script>
+  <script src="./js/code.js" defer></script>
+</body>
+
+</html>

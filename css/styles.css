@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 50px auto;
+  margin-top: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+header img {
+  width: 300px;
+}
+
+#input-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 25px;
+  -webkit-box-shadow: 5px 5px 15px 5px #ACACAC;
+  box-shadow: 5px 5px 15px 5px #ACACAC;
+  margin-bottom: 50px;
+}
+
+#input-container h2 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: black;
+}
+
+#attempt-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#word-container, .attempt {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+#word-container input, .attempt div {
+  border: 2px solid #A4AEC4;
+  color: white;
+  border-radius: 5px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.attempt div {
+  line-height: 70px;
+}
+
+#word-container input {
+  cursor: pointer;
+}
+
+#clear-button,
+#add-button {
+  margin-top: 20px;
+  border: 0;
+  border-radius: 20px;
+  font-size: 25px;
+  padding: 15px;
+  flex-grow: 1;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+#clear-button {
+  background-color: firebrick;
+}
+
+#clear-button:hover {
+  background-color: rgb(199, 82, 82);
+}
+
+#add-button {
+  background-color: #79B851;
+}
+
+#add-button:hover {
+  background-color: rgb(7, 177, 7);
+}
+
+.button-disabled {
+  background-color: gray !important;
+}
+
+.absent {
+  background-color: #A4AEC4;
+}
+
+.present {
+  background-color: #F3C237;
+  border: 2px solid #F3C237 !important;
+}
+
+.correct {
+  background-color: #79B851;
+  border: 2px solid #79B851 !important;
+}
+
+#result-container {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+#result-container li {
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+  flex-shrink: 1;
+  cursor: pointer;
+}
