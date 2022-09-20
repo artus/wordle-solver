@@ -13,6 +13,17 @@ body {
   margin-top: 0;
 }
 
+#fork-link {
+  position: absolute;
+  top: 0;
+  right: -50px;
+}
+
+#fork-link {
+  width: 200px;
+  height: 200px;
+}
+
 header {
   display: flex;
   flex-direction: row;
